@@ -1,12 +1,12 @@
 # FROM timescale/timescaledb:2.5.1-pg13
-FROM timescale/timescaledb:2.5.1-pg14
+FROM timescale/timescaledb:2.6.0-pg14
 
 LABEL maintainer="Twenty7 - https://github.com/Twenty7/postgresql-timescaledb-postgis-docker"
 # The following is copied from https://github.com/postgis/docker-postgis/blob/master/13-3.2/alpine/Dockerfile
 # Added 'llvm12-dev' to installed apps
 
-ENV POSTGIS_VERSION 3.2.0
-ENV POSTGIS_SHA256 c725d1be6d57ad199bbb6393cc3546defb70de1c78fe1787f7ccef2d51c3647b
+ENV POSTGIS_VERSION 3.2.1
+ENV POSTGIS_SHA256 1e9cc4c4f390e4c3be4f5c125a72f39dfa847412332952429952cbd731ac9ba3
 
 #Temporary fix:
 #   for PostGIS 2.* - building a special geos
